@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="drop.css">
+
+</head>
+<body>
+    
+        <div class="menubar">
+        <ul>
+           <a href="#"> <li class="active">Home</li></a>
+            <a href="#"><li>hotels</li></a>
+            <a href="#"></a><li>Service </li></a>
+            <a href="#"></a><li>Seminers</li></a>
+            <a href="about.html"><li>About Us</li></a>
+            <a href="#"></a><li>Reports</li></a>
+        </ul>
+    </div>
+
+<h2>TANZANIA TOURIST ATTRACTION</h2>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="kilimanjaro.jpg" class="pic">
+    <div class="text">kilimanjaro national  park</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="lake manyara.jpg" class="pic">
+    <div class="text">lake manyara national park</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="ol doinyo lengai.jpg" class="pic">
+    <div class="text">ol doinyo lengai national park</div>
+  </div> 
+  <div class="mySlides fade">
+      <div class="numbertext">4 / 6</div>
+      <img src="bismarck rock.jpg" class="pic">
+      <div class="text">bismarck</div>
+    </div> 
+    <div class="mySlides fade">
+      <div class="numbertext">5 / 6</div>
+      <img src="bawe island.jpg" class="pic">
+      <div class="text">bawe island</div>
+    </div> 
+    <div class="mySlides fade">
+      <div class="numbertext">6 / 6</div>
+      <img src="peace memorial meseum.jpg" class="pic">
+      <div class="text">peace memorial museum</div>
+    </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>         
+  <span class="dot"></span>   
+  <span class="dot"></span>     
+  <span class="dot"></span> 
+  </div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+<div class="histry">
+    <h2>SUMMARY</h2>
+    <P>
+        The tourism industry in Tanzania is one of the important sectors that make a significant contribution to economic growth.
+         Tanzania is blessed with many natural attractions such as spectacular landscapes, historical and archaeological sites , wildlife and biodiversity reserves, unspoiled beaches and a rich culture of 158 tribes.
+         The highlands in the south and north have many ranges of particularly interesting mountains with a height between 500 meters and 1000 meters in the surrounding areas. Mount Kilimanjaro with a height of 5,895 metersand Meru 4,500 meters found in northeastern Tanzania are mountains that resulted from volcanic eruptions many years ago, with The coastline is more than 804 kilometers long including the islands of Unguja and Pemba (which together form Zanzibar) and Mafia Island. The islands have a collection of natural, cultural, historical and archeological attractions. Other natural resources include Lake Victoria, the second largest lake in the world and the source of the Nile River. <br><br>
+        This section provides information about tourist attractions that citizens 
+        like to visit, including <a href="#"> wildlife reserves</a>,<a href="#"> natural forests</a> ,<a href=""> reserve forests </a>,<a href="#"> nature tourism</a>,<a href="#"> tourism companies</a>, how to plan a trip to Tanzania, accommodation services, associations tourist and flight information.
+        
+         </P>
+         <h3>the following are some of parks found in Tanzania mainland</h3>
+         <p id="gr"><a href="#"></a></p>
+         <script>
+          const parks = [];
+          parks[0]="serengeti";
+          parks[1]="mikumi";
+          parks[2]="saadani";
+          parks[3]="ngorongoro";
+          parks[4]="gombe";
+          document.getElementById("gr").innerHTML=parks;
+        </script>
+</div>
+
+</body>
+</html>

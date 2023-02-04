@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> login</title>
+     <link rel="stylesheet" href="in.css">
+     <script type="text/javascript">
+         var attempt = 5;
+       function validate(){
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("pswd").value;
+            if(username=="kevlar" && password =="12345678"){
+                
+                window.location="drop.html"; //redirecting window to other page
+                return false;
+            }
+            else {
+                
+                document.getElementById("msg").innerHTML="Username or password you have entered mismatch";
+                
+                    return false;
+                }
+            }
+        } 
+     
+
+     </script>
+    </head>
+    <body>
+        <div class="main" >
+            <div class="info">
+            <h1 >THIS IS LOGIN FORM</h1></div>
+            <div class="form" >
+                <form  action="z.html" >
+                    <label for="username" >username</label><br>
+                    <input type="text" name="username" id="username"><br>
+                    <label for="password" >password</label><br>
+                    <span id="msg" style="color: red;"></span><br>
+                    <input type="password" name="passcode1" id="pswd">
+                    <br><input type="submit" name="login" value="login" id="submit" onclick="return validate()" /> <br>
+                    <input type="checkbox" checked="checked">remember me <br>
+                   <br>
+                    <a href="#">forgot password</a>
+                    <!--for user with account  -->
+             </form>
+             <br><br>
+            <a href="formvalidation.html">i dont have account</a>
+            <!-- for a user who donot have account -->
+            <!-- this is for registration -->
+            </div>
+
+        </div>
+    </body>
+</html>
